@@ -17,6 +17,7 @@
     --tag-economia: #2d6a4f;
     --tag-recursos: #1e6091;
     --tag-geopolitica: #9b2226;
+    --tag-investimento: #7b4b94;
     --border: #e5e5e0;
     --radius: 8px;
     --font-serif: 'Lora', Georgia, serif;
@@ -84,6 +85,11 @@ header h1 {
     color: #1e1e1e;
 }
 
+header h1 a {
+    color: inherit;
+    text-decoration: none;
+}
+
 header p {
     font-size: 0.9rem;
     color: var(--text-muted);
@@ -148,6 +154,13 @@ nav a:hover,
 nav a:focus {
     color: var(--text);
     border-bottom-color: var(--accent);
+}
+
+/* ===== LINK ATIVO NA NAVEGAÇÃO ===== */
+nav a.active {
+    color: var(--text);
+    border-bottom-color: var(--accent);
+    font-weight: 600;
 }
 
 /* ===== HERO ===== */
@@ -278,6 +291,7 @@ article:hover {
 .tag-economia { background-color: var(--tag-economia); }
 .tag-recursos { background-color: var(--tag-recursos); }
 .tag-geopolitica { background-color: var(--tag-geopolitica); }
+.tag-investimento { background-color: var(--tag-investimento); }
 
 article h3 {
     font-size: 1.25rem;

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="lang-pt">Sobre | Coordenada 25</title>
+    <title class="lang-en" style="display: none;">About | Coordenada 25</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos específicos da página Sobre */
+        .sobre-hero {
+            background-color: #1e1e1e;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .sobre-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-family: var(--font-serif);
+        }
+        
+        .sobre-hero p {
+            font-size: 1.2rem;
+            color: #cccccc;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .sobre-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .sobre-content h2 {
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+        
+        .sobre-content h3 {
+            font-family: var(--font-serif);
+            font-size: 1.3rem;
+            margin: 2rem 0 0.75rem;
+            color: var(--text);
+        }
+        
+        .sobre-content p {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 1.25rem;
+        }
+        
+        .sobre-content ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 2rem;
+        }
+        
+        .sobre-content ul li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+        
+        .sobre-content ul li::before {
+            content: "•";
+            color: var(--accent);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .sobre-destaque {
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .sobre-destaque p {
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            font-style: italic;
+            color: var(--text);
+            margin: 0;
+        }
+        
+        .sobre-cta {
+            text-align: center;
+            margin: 3rem 0 1rem;
+        }
+        
+        .sobre-cta a {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        
+        .sobre-cta a:hover {
+            background-color: var(--accent-hover);
+        }
+        
+        @media (max-width: 768px) {
+            .sobre-hero h1 {
+                font-size: 1.8rem;
+            }
+            .sobre-hero p {
+                font-size: 1rem;
+            }
+            .sobre-content {
+                padding: 2rem 1.5rem;
+            }
+            .sobre-content h2 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="header-top">
+            <div>
+                <h1><a href="index.html" style="color: inherit;">Coordenada 25</a></h1>
+                <p class="lang-pt">Análise <span class="dot"></span> Contexto <span class="dot"></span> Inteligência</p>
+                <p class="lang-en" style="display: none;">Analysis <span class="dot"></span> Context <span class="dot"></span> Intelligence</p>
+            </div>
+            <button id="langToggle" class="lang-btn">🇬🇧 EN</button>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <div class="nav-inner">
+        <a href="index.html" class="lang-pt">Início</a>
+        <a href="index.html" class="lang-en" style="display: none;">Home</a>
+        
+        <a href="#" class="lang-pt">Economia</a>
+        <a href="#" class="lang-en" style="display: none;">Economy</a>
+        
+        <a href="#" class="lang-pt">Recursos</a>
+        <a href="#" class="lang-en" style="display: none;">Resources</a>
+        
+        <a href="#" class="lang-pt">Geopolítica</a>
+        <a href="#" class="lang-en" style="display: none;">Geopolitics</a>
+        
+        <a href="sobre.html" class="lang-pt active">Sobre</a>
+        <a href="sobre.html" class="lang-en active" style="display: none;">About</a>
+    </div>
+</nav>
+
+<section class="sobre-hero">
+    <h1 class="lang-pt">Conhecimento estratégico sobre Moçambique</h1>
+    <h1 class="lang-en" style="display: none;">Strategic knowledge about Mozambique</h1>
+    
+    <p class="lang-pt">
+        O Coordenada 25 nasce para preencher uma lacuna: a falta de análise estratégica, 
+        independente e acessível sobre Moçambique.
+    </p>
+    <p class="lang-en" style="display: none;">
+        Coordenada 25 is born to fill a gap: the lack of strategic, 
+        independent and accessible analysis about Mozambique.
+    </p>
+</section>
+
+<section class="sobre-content">
+    
+    <h2 class="lang-pt">O que fazemos</h2>
+    <h2 class="lang-en" style="display: none;">What we do</h2>
+    
+    <p class="lang-pt">
+        Somos uma plataforma de <strong>market intelligence</strong> focada em Moçambique. 
+        Transformamos dados, eventos e tendências em análises estratégicas para profissionais, 
+        investidores, académicos e decisores que precisam de compreender o país além das manchetes.
+    </p>
+    <p class="lang-en" style="display: none;">
+        We are a <strong>market intelligence</strong> platform focused on Mozambique. 
+        We transform data, events and trends into strategic analyses for professionals, 
+        investors, academics and decision-makers who need to understand the country beyond the headlines.
+    </p>
+    
+    <h3 class="lang-pt">O que nos diferencia</h3>
+    <h3 class="lang-en" style="display: none;">What sets us apart</h3>
+    
+    <ul>
+        <li class="lang-pt"><strong>Análise, não notícias.</strong> Cada artigo oferece contexto, implicações e cenários.</li>
+        <li class="lang-en" style="display: none;"><strong>Analysis, not news.</strong> Each article offers context, implications and scenarios.</li>
+        
+        <li class="lang-pt"><strong>Independência editorial.</strong> Sem vínculos partidários ou corporativos.</li>
+        <li class="lang-en" style="display: none;"><strong>Editorial independence.</strong> No partisan or corporate ties.</li>
+        
+        <li class="lang-pt"><strong>Bilinguismo real.</strong> Todo o conteúdo disponível em português e inglês, escrito por pessoas.</li>
+        <li class="lang-en" style="display: none;"><strong>Real bilingualism.</strong> All content available in Portuguese and English, written by humans.</li>
+        
+        <li class="lang-pt"><strong>Foco em oportunidades.</strong> Identificamos tendências e espaços de investimento e desenvolvimento.</li>
+        <li class="lang-en" style="display: none;"><strong>Focus on opportunities.</strong> We identify trends and spaces for investment and development.</li>
+    </ul>
+    
+    <h3 class="lang-pt">Áreas de cobertura</h3>
+    <h3 class="lang-en" style="display: none;">Coverage areas</h3>
+    
+    <p class="lang-pt">
+        Economia, recursos naturais e energia, geopolítica e relações internacionais, 
+        logística e infraestrutura, investimento e ambiente de negócios, 
+        governação e políticas públicas.
+    </p>
+    <p class="lang-en" style="display: none;">
+        Economy, natural resources and energy, geopolitics and international relations, 
+        logistics and infrastructure, investment and business environment, 
+        governance and public policies.
+    </p>
+    
+    <div class="sobre-destaque">
+        <p class="lang-pt">
+            "Moçambique está numa encruzilhada histórica. Acreditamos que informação de qualidade 
+            é a base para decisões que moldam o futuro do país."
+        </p>
+        <p class="lang-en" style="display: none;">
+            "Mozambique is at a historic crossroads. We believe that quality information 
+            is the foundation for decisions that shape the country's future."
+        </p>
+    </div>
+    
+    <h3 class="lang-pt">Para quem escrevemos</h3>
+    <h3 class="lang-en" style="display: none;">Who we write for</h3>
+    
+    <ul>
+        <li class="lang-pt">Investidores e analistas de mercado</li>
+        <li class="lang-en" style="display: none;">Investors and market analysts</li>
+        
+        <li class="lang-pt">Diplomatas e organizações internacionais</li>
+        <li class="lang-en" style="display: none;">Diplomats and international organizations</li>
+        
+        <li class="lang-pt">Académicos, investigadores e estudantes</li>
+        <li class="lang-en" style="display: none;">Academics, researchers and students</li>
+        
+        <li class="lang-pt">Empreendedores e gestores</li>
+        <li class="lang-en" style="display: none;">Entrepreneurs and managers</li>
+        
+        <li class="lang-pt">Jornalistas e analistas políticos</li>
+        <li class="lang-en" style="display: none;">Journalists and political analysts</li>
+        
+        <li class="lang-pt">Todos os que querem pensar Moçambique com profundidade</li>
+        <li class="lang-en" style="display: none;">Anyone who wants to think about Mozambique in depth</li>
+    </ul>
+    
+    <div class="sobre-cta">
+        <a href="index.html" class="lang-pt">Explorar análises</a>
+        <a href="index.html" class="lang-en" style="display: none;">Explore analyses</a>
+    </div>
+
+</section>
+
+<footer>
+    <p class="lang-pt">© 2026 Coordenada 25 · Moçambique em Perspectiva</p>
+    <p class="lang-en" style="display: none;">© 2026 Coordenada 25 · Mozambique in Perspective</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
