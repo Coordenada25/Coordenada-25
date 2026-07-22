@@ -3,27 +3,30 @@
     "categoria": "economia",
     "categoria_pt": "Economia",
     "categoria_en": "Economy",
-    "titulo_pt": "Mercados e crescimento",
-    "titulo_en": "Markets and growth",
-    "texto_pt": "Investimento, mercados e tendências que definem o crescimento nacional.",
-    "texto_en": "Investment, markets and trends that define national growth."
+    "titulo_pt": "Moçambique investe $250M na linha férrea",
+    "titulo_en": "Mozambique invests $250M in railway line",
+    "texto_pt": "O que significa este investimento para o Corredor de Nacala e a logística regional.",
+    "texto_en": "What this investment means for the Nacala Corridor and regional logistics.",
+    "link": "briefing.html"
   },
   {
     "categoria": "recursos",
     "categoria_pt": "Recursos",
     "categoria_en": "Resources",
-    "titulo_pt": "Energia e minerais",
-    "titulo_en": "Energy and minerals",
-    "texto_pt": "Energia, minerais estratégicos e oportunidades de desenvolvimento.",
-    "texto_en": "Energy, strategic minerals and development opportunities."
+    "titulo_pt": "Produção de grafite atinge novo recorde",
+    "titulo_en": "Graphite production hits new record",
+    "texto_pt": "Cabo Delgado consolida-se como fornecedor estratégico global.",
+    "texto_en": "Cabo Delgado consolidates as a strategic global supplier.",
+    "link": "briefing.html"
   },
   {
     "categoria": "geopolitica",
     "categoria_pt": "Geopolítica",
     "categoria_en": "Geopolitics",
-    "titulo_pt": "Posição estratégica",
-    "titulo_en": "Strategic position",
-    "texto_pt": "O papel de Moçambique num mundo em transformação.",
-    "texto_en": "Mozambique's role in a changing world."
+    "titulo_pt": "Moçambique no Conselho de Segurança da ONU",
+    "titulo_en": "Mozambique at the UN Security Council",
+    "texto_pt": "Implicações diplomáticas e oportunidades para o país.",
+    "texto_en": "Diplomatic implications and opportunities for the country.",
+    "link": "briefing.html"
   }
 ]

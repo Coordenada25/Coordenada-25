@@ -1,11 +1,9 @@
 {
-  "eyebrow_pt": "Análise em destaque",
-  "eyebrow_en": "Featured analysis",
+  "eyebrow_pt": "Deep Dive",
+  "eyebrow_en": "Deep Dive",
   "titulo_pt": "O futuro energético de Moçambique: entre LNG, investimento e desenvolvimento.",
   "titulo_en": "Mozambique's energy future: between LNG, investment and development.",
-  "texto_pt": "Uma leitura estratégica sobre os factores que vão moldar a próxima década.",
-  "texto_en": "A strategic reading on the factors that will shape the next decade.",
-  "link_texto_pt": "Ler análise completa →",
-  "link_texto_en": "Read full analysis →",
-  "link_url": "#"
+  "texto_pt": "Uma leitura estratégica sobre os factores que vão moldar a próxima década. Cenários, riscos e oportunidades para investidores e decisores.",
+  "texto_en": "A strategic reading on the factors that will shape the next decade. Scenarios, risks and opportunities for investors and decision-makers.",
+  "link_url": "artigo.html"
 }

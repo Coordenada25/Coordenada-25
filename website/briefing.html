@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="lang-pt">Briefing | Coordenada 25</title>
+    <title class="lang-en" style="display: none;">Briefing | Coordenada 25</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .briefing-header {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 1rem;
+        }
+        .briefing-tag {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 0.25rem 0.7rem;
+            border-radius: 20px;
+            color: white;
+            margin-bottom: 0.75rem;
+        }
+        .briefing-header h1 {
+            font-family: var(--font-serif);
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 0.5rem;
+        }
+        .briefing-data {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            padding-bottom: 1.25rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .briefing-corpo {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 1.5rem 1.5rem 3rem;
+        }
+        .briefing-corpo p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: var(--text-muted);
+            margin-bottom: 1.25rem;
+        }
+        .briefing-corpo h2 {
+            font-family: var(--font-serif);
+            font-size: 1.25rem;
+            margin: 1.75rem 0 0.75rem;
+        }
+        .briefing-voltar {
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            padding: 0 1.5rem;
+        }
+        .briefing-voltar a {
+            color: var(--accent);
+            font-weight: 600;
+        }
+        @media (max-width: 768px) {
+            .briefing-header h1 { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="header-top">
+            <div>
+                <h1><a href="index.html" style="color: inherit; text-decoration: none;">Coordenada 25</a></h1>
+                <p class="lang-pt">Análise <span class="dot"></span> Contexto <span class="dot"></span> Inteligência</p>
+                <p class="lang-en" style="display: none;">Analysis <span class="dot"></span> Context <span class="dot"></span> Intelligence</p>
+            </div>
+            <button id="langToggle" class="lang-btn">🇬🇧 EN</button>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <div class="nav-inner">
+        <a href="index.html" class="lang-pt">Início</a>
+        <a href="index.html" class="lang-en" style="display: none;">Home</a>
+        <a href="arquivo.html" class="lang-pt">Arquivo</a>
+        <a href="arquivo.html" class="lang-en" style="display: none;">Archive</a>
+        <a href="sobre.html" class="lang-pt">Sobre</a>
+        <a href="sobre.html" class="lang-en" style="display: none;">About</a>
+    </div>
+</nav>
+
+<article>
+    <header class="briefing-header">
+        <span class="briefing-tag tag-economia lang-pt">Economia</span>
+        <span class="briefing-tag tag-economia lang-en" style="display: none;">Economy</span>
+        <h1 class="lang-pt">Título do briefing em português</h1>
+        <h1 class="lang-en" style="display: none;">Briefing title in English</h1>
+        <div class="briefing-data">
+            <span class="lang-pt">📅 22 Jul 2026 · ⏱️ 4 min</span>
+            <span class="lang-en" style="display: none;">📅 Jul 22, 2026 · ⏱️ 4 min</span>
+        </div>
+    </header>
+    
+    <div class="briefing-corpo">
+        <p class="lang-pt"><strong>Abertura.</strong> O que aconteceu e porque é relevante.</p>
+        <p class="lang-en" style="display: none;"><strong>Opening.</strong> What happened and why it matters.</p>
+        
+        <h2 class="lang-pt">O que muda</h2>
+        <h2 class="lang-en" style="display: none;">What changes</h2>
+        <p class="lang-pt">Análise curta das implicações. Dados e contexto.</p>
+        <p class="lang-en" style="display: none;">Short analysis of implications. Data and context.</p>
+        
+        <h2 class="lang-pt">O que esperar</h2>
+        <h2 class="lang-en" style="display: none;">What to expect</h2>
+        <p class="lang-pt">Perspetiva de futuro. O que acompanhar nos próximos tempos.</p>
+        <p class="lang-en" style="display: none;">Future outlook. What to follow in the coming period.</p>
+    </div>
+    
+    <div class="briefing-voltar">
+        <a href="index.html" class="lang-pt">← Voltar ao Radar</a>
+        <a href="index.html" class="lang-en" style="display: none;">← Back to Radar</a>
+    </div>
+</article>
+
+<footer>
+    <p class="lang-pt">© 2026 Coordenada 25 · Moçambique em Perspectiva</p>
+    <p class="lang-en" style="display: none;">© 2026 Coordenada 25 · Mozambique in Perspective</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

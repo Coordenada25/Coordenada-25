@@ -1,0 +1,38 @@
+[
+  {
+    "valor": "$34",
+    "unidade_pt": "Petróleo Brent",
+    "unidade_en": "Brent Oil",
+    "tendencia": "down"
+  },
+  {
+    "valor": "64.5",
+    "unidade_pt": "USD/MZN",
+    "unidade_en": "USD/MZN",
+    "tendencia": "up"
+  },
+  {
+    "valor": "6.2%",
+    "unidade_pt": "Inflação anual",
+    "unidade_en": "Annual inflation",
+    "tendencia": "down"
+  },
+  {
+    "valor": "$3.8B",
+    "unidade_pt": "Reservas internacionais",
+    "unidade_en": "International reserves",
+    "tendencia": "up"
+  },
+  {
+    "valor": "2.1M",
+    "unidade_pt": "Carvão (toneladas)",
+    "unidade_en": "Coal (tons)",
+    "tendencia": "up"
+  },
+  {
+    "valor": "5.4%",
+    "unidade_pt": "Crescimento PIB",
+    "unidade_en": "GDP growth",
+    "tendencia": "up"
+  }
+]

@@ -28,18 +28,10 @@
 
 <nav>
     <div class="nav-inner">
-        <a href="index.html" class="lang-pt active">Início</a>
-        <a href="index.html" class="lang-en active" style="display: none;">Home</a>
-        
-        <a href="#" class="lang-pt">Economia</a>
-        <a href="#" class="lang-en" style="display: none;">Economy</a>
-        
-        <a href="#" class="lang-pt">Recursos</a>
-        <a href="#" class="lang-en" style="display: none;">Resources</a>
-        
-        <a href="#" class="lang-pt">Geopolítica</a>
-        <a href="#" class="lang-en" style="display: none;">Geopolitics</a>
-        
+        <a href="index.html" class="active lang-pt">Início</a>
+        <a href="index.html" class="active lang-en" style="display: none;">Home</a>
+        <a href="arquivo.html" class="lang-pt">Arquivo</a>
+        <a href="arquivo.html" class="lang-en" style="display: none;">Archive</a>
         <a href="sobre.html" class="lang-pt">Sobre</a>
         <a href="sobre.html" class="lang-en" style="display: none;">About</a>
     </div>
@@ -48,25 +40,21 @@
 <section class="hero">
     <img src="https://images.unsplash.com/photo-1489493585363-d69421e0edd3" alt="Maputo">
     <div class="hero-text">
-        <span class="kicker lang-pt">Em destaque</span>
-        <span class="kicker lang-en" style="display: none;">Featured</span>
+        <span class="kicker lang-pt" id="hero-kicker-pt">Deep Dive</span>
+        <span class="kicker lang-en" id="hero-kicker-en" style="display: none;">Deep Dive</span>
         
-        <h2 class="lang-pt">Moçambique além das manchetes.</h2>
-        <h2 class="lang-en" style="display: none;">Mozambique beyond the headlines.</h2>
+        <h2 class="lang-pt" id="hero-titulo-pt">Moçambique além das manchetes.</h2>
+        <h2 class="lang-en" id="hero-titulo-en" style="display: none;">Mozambique beyond the headlines.</h2>
         
-        <p class="lang-pt">
-            A Coordenada 25 transforma acontecimentos,
-            recursos e tendências em análises estratégicas
-            sobre o futuro de Moçambique.
+        <p class="lang-pt" id="hero-texto-pt">
+            A Coordenada 25 transforma acontecimentos, recursos e tendências em análises estratégicas sobre o futuro de Moçambique.
         </p>
-        <p class="lang-en" style="display: none;">
-            Coordenada 25 transforms events,
-            resources and trends into strategic analyses
-            about Mozambique's future.
+        <p class="lang-en" id="hero-texto-en" style="display: none;">
+            Coordenada 25 transforms events, resources and trends into strategic analyses about Mozambique's future.
         </p>
         
-        <button class="lang-pt">Explorar análises</button>
-        <button class="lang-en" style="display: none;">Explore analyses</button>
+        <a href="artigo.html" class="hero-btn lang-pt" id="hero-link-pt">Ler análise completa</a>
+        <a href="artigo.html" class="hero-btn lang-en" id="hero-link-en" style="display: none;">Read full analysis</a>
     </div>
 </section>
 
@@ -78,30 +66,22 @@
     <h2 class="lang-en" style="display: none;">What we're tracking</h2>
 
     <div class="articles" id="radar-container">
-        <!-- Preenchido automaticamente pelo JavaScript -->
+        <!-- Preenchido pelo JavaScript -->
     </div>
 </section>
 
-<section class="feature">
-    <span class="eyebrow lang-pt" id="analise-eyebrow-pt">Análise em destaque</span>
-    <span class="eyebrow lang-en" id="analise-eyebrow-en" style="display: none;">Featured analysis</span>
+<section class="metricas">
+    <span class="eyebrow lang-pt">Moçambique em Números</span>
+    <span class="eyebrow lang-en" style="display: none;">Mozambique in Numbers</span>
     
-    <h3 class="lang-pt" id="analise-titulo-pt">O futuro energético de Moçambique</h3>
-    <h3 class="lang-en" id="analise-titulo-en" style="display: none;">Mozambique's energy future</h3>
+    <h2 class="lang-pt">Indicadores atualizados</h2>
+    <h2 class="lang-en" style="display: none;">Updated indicators</h2>
     
-    <p class="lang-pt" id="analise-texto-pt">Uma leitura estratégica.</p>
-    <p class="lang-en" id="analise-texto-en" style="display: none;">A strategic reading.</p>
-    
-    <a href="#" class="feature-link lang-pt" id="analise-link-pt">Ler análise completa →</a>
-    <a href="#" class="feature-link lang-en" id="analise-link-en" style="display: none;">Read full analysis →</a>
-</section>
+    <p class="metricas-data lang-pt">Atualizado: 22 de Julho de 2026</p>
+    <p class="metricas-data lang-en" style="display: none;">Updated: July 22, 2026</p>
 
-<section class="data">
-    <span class="eyebrow eyebrow-light lang-pt">Dados que importam</span>
-    <span class="eyebrow eyebrow-light lang-en" style="display: none;">Data that matters</span>
-    
-    <div class="data-grid" id="dados-container">
-        <!-- Preenchido automaticamente pelo JavaScript -->
+    <div class="metricas-grid" id="metricas-container">
+        <!-- Preenchido pelo JavaScript -->
     </div>
 </section>
 

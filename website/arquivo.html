@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="lang-pt">Arquivo | Coordenada 25</title>
+    <title class="lang-en" style="display: none;">Archive | Coordenada 25</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .arquivo-hero {
+            background-color: #1e1e1e;
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        .arquivo-hero h1 {
+            font-family: var(--font-serif);
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .arquivo-hero p {
+            color: #cccccc;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .arquivo-seccao {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        .arquivo-seccao h2 {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+        }
+        .arquivo-lista {
+            list-style: none;
+            padding: 0;
+        }
+        .arquivo-lista li {
+            padding: 1.2rem 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .arquivo-lista li a {
+            font-weight: 600;
+            color: var(--text);
+            font-size: 1.05rem;
+            transition: color 0.2s;
+        }
+        .arquivo-lista li a:hover {
+            color: var(--accent);
+        }
+        .arquivo-data {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        @media (max-width: 768px) {
+            .arquivo-hero h1 { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="header-top">
+            <div>
+                <h1><a href="index.html" style="color: inherit; text-decoration: none;">Coordenada 25</a></h1>
+                <p class="lang-pt">Análise <span class="dot"></span> Contexto <span class="dot"></span> Inteligência</p>
+                <p class="lang-en" style="display: none;">Analysis <span class="dot"></span> Context <span class="dot"></span> Intelligence</p>
+            </div>
+            <button id="langToggle" class="lang-btn">🇬🇧 EN</button>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <div class="nav-inner">
+        <a href="index.html" class="lang-pt">Início</a>
+        <a href="index.html" class="lang-en" style="display: none;">Home</a>
+        <a href="arquivo.html" class="active lang-pt">Arquivo</a>
+        <a href="arquivo.html" class="active lang-en" style="display: none;">Archive</a>
+        <a href="sobre.html" class="lang-pt">Sobre</a>
+        <a href="sobre.html" class="lang-en" style="display: none;">About</a>
+    </div>
+</nav>
+
+<section class="arquivo-hero">
+    <h1 class="lang-pt">Biblioteca de análises</h1>
+    <h1 class="lang-en" style="display: none;">Analysis library</h1>
+    <p class="lang-pt">Todos os Deep Dives e Briefings publicados.</p>
+    <p class="lang-en" style="display: none;">All published Deep Dives and Briefings.</p>
+</section>
+
+<section class="arquivo-seccao">
+    <h2 class="lang-pt">Deep Dives</h2>
+    <h2 class="lang-en" style="display: none;">Deep Dives</h2>
+    <ul class="arquivo-lista" id="lista-deepdives">
+        <li class="lang-pt">A carregar...</li>
+        <li class="lang-en" style="display: none;">Loading...</li>
+    </ul>
+</section>
+
+<section class="arquivo-seccao">
+    <h2 class="lang-pt">Briefings</h2>
+    <h2 class="lang-en" style="display: none;">Briefings</h2>
+    <ul class="arquivo-lista" id="lista-briefings">
+        <li class="lang-pt">A carregar...</li>
+        <li class="lang-en" style="display: none;">Loading...</li>
+    </ul>
+</section>
+
+<footer>
+    <p class="lang-pt">© 2026 Coordenada 25 · Moçambique em Perspectiva</p>
+    <p class="lang-en" style="display: none;">© 2026 Coordenada 25 · Mozambique in Perspective</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
