@@ -92,12 +92,19 @@
     <p class="lang-pt">Uma leitura estratégica de Moçambique todas as semanas.</p>
     <p class="lang-en" style="display: none;">A strategic read on Mozambique every week.</p>
     
-    <form class="newsletter-form">
-        <input type="email" placeholder="O seu email" required class="lang-pt">
-        <input type="email" placeholder="Your email" required class="lang-en" style="display: none;">
+    <form
+        action="https://buttondown.com/api/emails/embed-subscribe/Coordenada25"
+        method="post"
+        class="newsletter-form embeddable-buttondown-form"
+    >
+        <input type="email" name="email" id="newsletter-email" placeholder="O seu email" required>
         <button type="submit" class="lang-pt">Subscrever</button>
         <button type="submit" class="lang-en" style="display: none;">Subscribe</button>
     </form>
+
+    <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.75rem;">
+        <a href="https://buttondown.com/refer/Coordenada25" target="_blank">Powered by Buttondown</a>
+    </p>
 </section>
 
 <footer>

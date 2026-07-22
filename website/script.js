@@ -269,4 +269,10 @@ function aplicarIdiomaAtual() {
         ptElements.forEach(function(el) { el.style.display = 'none'; });
         enElements.forEach(function(el) { el.style.display = ''; });
     }
+
+    // Atualizar placeholder do campo de email da newsletter conforme o idioma
+    var emailInput = document.getElementById('newsletter-email');
+    if (emailInput) {
+        emailInput.placeholder = lang === 'pt' ? 'O seu email' : 'Your email';
+    }
 }
