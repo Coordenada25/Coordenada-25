@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="lang-pt">Título do Artigo | Coordenada 25</title>
+    <title class="lang-en" style="display: none;">Article Title | Coordenada 25</title>
+    <meta name="description" content="Descrição do artigo para SEO">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* ===== ESTILOS ESPECÍFICOS DO ARTIGO ===== */
+        
+        .artigo-header {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem 2rem;
+        }
+        
+        .artigo-categoria {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+        
+        .artigo-header h1 {
+            font-family: var(--font-serif);
+            font-size: 2.8rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+        
+        .artigo-meta {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+            flex-wrap: wrap;
+        }
+        
+        .artigo-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+        
+        .artigo-meta .dot-separator {
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background-color: var(--text-muted);
+        }
+        
+        .artigo-imagem {
+            max-width: 800px;
+            margin: 2rem auto 0;
+            padding: 0 2rem;
+        }
+        
+        .artigo-imagem img {
+            width: 100%;
+            border-radius: var(--radius);
+            max-height: 450px;
+            object-fit: cover;
+        }
+        
+        .artigo-imagem figcaption {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+        
+        .artigo-corpo {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 2rem 2rem 4rem;
+        }
+        
+        .artigo-corpo h2 {
+            font-family: var(--font-serif);
+            font-size: 1.6rem;
+            margin: 2.5rem 0 1rem;
+            color: var(--text);
+        }
+        
+        .artigo-corpo h3 {
+            font-family: var(--font-serif);
+            font-size: 1.25rem;
+            margin: 2rem 0 0.75rem;
+            color: var(--text);
+        }
+        
+        .artigo-corpo p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+        
+        .artigo-corpo p strong {
+            color: var(--text);
+        }
+        
+        .artigo-corpo blockquote {
+            border-left: 3px solid var(--accent);
+            margin: 2rem 0;
+            padding: 1rem 1.5rem;
+            background-color: #f9f6f3;
+            border-radius: 0 6px 6px 0;
+        }
+        
+        .artigo-corpo blockquote p {
+            font-family: var(--font-serif);
+            font-style: italic;
+            color: var(--text);
+            margin: 0;
+            font-size: 1.15rem;
+        }
+        
+        .artigo-corpo ul, 
+        .artigo-corpo ol {
+            margin: 0 0 1.5rem 1.5rem;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .artigo-corpo li {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Destaque informativo */
+        .artigo-destaque {
+            background-color: #f9f6f3;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .artigo-destaque h4 {
+            font-family: var(--font-sans);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        .artigo-destaque p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+        
+        /* Navegação entre artigos */
+        .artigo-navegacao {
+            max-width: 700px;
+            margin: 0 auto 4rem;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid var(--border);
+            padding-top: 2rem;
+        }
+        
+        .artigo-navegacao a {
+            font-weight: 600;
+            color: var(--accent);
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        
+        .artigo-navegacao a:hover {
+            color: var(--accent-hover);
+        }
+        
+        /* Newsletter no final do artigo */
+        .artigo-newsletter {
+            max-width: 600px;
+            margin: 0 auto 4rem;
+            padding: 2rem;
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            text-align: center;
+        }
+        
+        .artigo-newsletter h3 {
+            font-family: var(--font-serif);
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .artigo-newsletter p {
+            color: var(--text-muted);
+            margin-bottom: 1.2rem;
+            font-size: 0.95rem;
+        }
+        
+        .artigo-newsletter form {
+            display: flex;
+            gap: 0.5rem;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .artigo-newsletter input {
+            flex: 1;
+            padding: 0.7rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-family: var(--font-sans);
+        }
+        
+        .artigo-newsletter button {
+            background-color: var(--accent);
+            color: white;
+            border: none;
+            padding: 0 1.2rem;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: var(--font-sans);
+        }
+        
+        /* ===== RESPONSIVO ===== */
+        @media (max-width: 768px) {
+            .artigo-header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .artigo-header {
+                padding: 2rem 1.5rem 1.5rem;
+            }
+            
+            .artigo-imagem {
+                padding: 0 1.5rem;
+            }
+            
+            .artigo-corpo {
+                padding: 1.5rem 1.5rem 3rem;
+            }
+            
+            .artigo-corpo h2 {
+                font-size: 1.3rem;
+            }
+            
+            .artigo-corpo p {
+                font-size: 1rem;
+            }
+            
+            .artigo-newsletter form {
+                flex-direction: column;
+            }
+            
+            .artigo-newsletter button {
+                padding: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="header-top">
+            <div>
+                <h1><a href="index.html" style="color: inherit; text-decoration: none;">Coordenada 25</a></h1>
+                <p class="lang-pt">Análise <span class="dot"></span> Contexto <span class="dot"></span> Inteligência</p>
+                <p class="lang-en" style="display: none;">Analysis <span class="dot"></span> Context <span class="dot"></span> Intelligence</p>
+            </div>
+            <button id="langToggle" class="lang-btn">🇬🇧 EN</button>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <div class="nav-inner">
+        <a href="index.html" class="lang-pt">Início</a>
+        <a href="index.html" class="lang-en" style="display: none;">Home</a>
+        
+        <a href="#" class="lang-pt">Economia</a>
+        <a href="#" class="lang-en" style="display: none;">Economy</a>
+        
+        <a href="#" class="lang-pt">Recursos</a>
+        <a href="#" class="lang-en" style="display: none;">Resources</a>
+        
+        <a href="#" class="lang-pt">Geopolítica</a>
+        <a href="#" class="lang-en" style="display: none;">Geopolitics</a>
+        
+        <a href="sobre.html" class="lang-pt">Sobre</a>
+        <a href="sobre.html" class="lang-en" style="display: none;">About</a>
+    </div>
+</nav>
+
+<!-- ========== CABEÇALHO DO ARTIGO ========== -->
+<article>
+    <header class="artigo-header">
+        <span class="artigo-categoria tag-economia lang-pt">Economia</span>
+        <span class="artigo-categoria tag-economia lang-en" style="display: none;">Economy</span>
+        
+        <h1 class="lang-pt">Título do artigo em português — claro, direto e informativo</h1>
+        <h1 class="lang-en" style="display: none;">Article title in English — clear, direct and informative</h1>
+        
+        <div class="artigo-meta">
+            <span class="lang-pt">📅 22 de Julho de 2026</span>
+            <span class="lang-en" style="display: none;">📅 July 22, 2026</span>
+            
+            <span class="dot-separator"></span>
+            
+            <span class="lang-pt">⏱️ 8 min de leitura</span>
+            <span class="lang-en" style="display: none;">⏱️ 8 min read</span>
+            
+            <span class="dot-separator"></span>
+            
+            <span class="lang-pt">✍️ Equipa Coordenada 25</span>
+            <span class="lang-en" style="display: none;">✍️ Coordenada 25 Team</span>
+        </div>
+    </header>
+    
+    <!-- ========== IMAGEM DE DESTAQUE ========== -->
+    <figure class="artigo-imagem">
+        <img src="https://images.unsplash.com/photo-1489493585363-d69421e0edd3" alt="Imagem do artigo">
+        <figcaption class="lang-pt">Legenda da imagem em português. Fonte: Unsplash</figcaption>
+        <figcaption class="lang-en" style="display: none;">Image caption in English. Source: Unsplash</figcaption>
+    </figure>
+    
+    <!-- ========== CORPO DO ARTIGO ========== -->
+    <div class="artigo-corpo">
+        
+        <!-- Parágrafo de introdução -->
+        <p class="lang-pt">
+            <strong>Este é o parágrafo de abertura.</strong> 
+            Aqui deves capturar a atenção do leitor, apresentar o tema e explicar 
+            porque é que este artigo é relevante agora. Contexto, números-chave e 
+            a tese principal numa frase.
+        </p>
+        <p class="lang-en" style="display: none;">
+            <strong>This is the opening paragraph.</strong> 
+            Here you should capture the reader's attention, present the topic and explain 
+            why this article is relevant now. Context, key numbers and 
+            the main thesis in one sentence.
+        </p>
+        
+        <!-- Subtítulo -->
+        <h2 class="lang-pt">Contexto e enquadramento</h2>
+        <h2 class="lang-en" style="display: none;">Context and background</h2>
+        
+        <p class="lang-pt">
+            Desenvolve aqui o contexto. Explica o panorama atual, os antecedentes 
+            históricos ou políticos relevantes. Dá ao leitor a base necessária para 
+            compreender a análise que se segue.
+        </p>
+        <p class="lang-en" style="display: none;">
+            Develop the context here. Explain the current landscape, the relevant historical 
+            or political background. Give the reader the necessary foundation to 
+            understand the analysis that follows.
+        </p>
+        
+        <p class="lang-pt">
+            Podes ter vários parágrafos. O tom deve ser analítico, informado, 
+            mas acessível. Evita jargão desnecessário. Cada parágrafo deve 
+            acrescentar uma ideia nova.
+        </p>
+        <p class="lang-en" style="display: none;">
+            You can have multiple paragraphs. The tone should be analytical, informed, 
+            but accessible. Avoid unnecessary jargon. Each paragraph should 
+            add a new idea.
+        </p>
+        
+        <!-- Bloco de citação -->
+        <blockquote>
+            <p class="lang-pt">"Uma citação relevante de um especialista, relatório ou figura pública que reforça o argumento do artigo."</p>
+            <p class="lang-en" style="display: none;">"A relevant quote from an expert, report or public figure that reinforces the article's argument."</p>
+        </blockquote>
+        
+        <!-- Subtítulo -->
+        <h2 class="lang-pt">Análise e implicações</h2>
+        <h2 class="lang-en" style="display: none;">Analysis and implications</h2>
+        
+        <p class="lang-pt">
+            Aqui entra a análise propriamente dita. O que significam estes factos? 
+            Quais são as tendências? Que cenários se podem desenhar? 
+            Usa dados, comparações e raciocínio lógico.
+        </p>
+        <p class="lang-en" style="display: none;">
+            Here comes the analysis itself. What do these facts mean? 
+            What are the trends? What scenarios can be drawn? 
+            Use data, comparisons and logical reasoning.
+        </p>
+        
+        <!-- Destaque informativo -->
+        <div class="artigo-destaque">
+            <h4 class="lang-pt">📊 Em números</h4>
+            <h4 class="lang-en" style="display: none;">📊 In numbers</h4>
+            <p class="lang-pt">
+                <strong>65%</strong> — Percentagem de X que Y<br>
+                <strong>$2.4B</strong> — Investimento previsto em Z<br>
+                <strong>3.º</strong> — Posição de Moçambique no ranking de W
+            </p>
+            <p class="lang-en" style="display: none;">
+                <strong>65%</strong> — Percentage of X that Y<br>
+                <strong>$2.4B</strong> — Expected investment in Z<br>
+                <strong>3rd</strong> — Mozambique's position in the W ranking
+            </p>
+        </div>
+        
+        <!-- Subtítulo -->
+        <h3 class="lang-pt">Cenário optimista</h3>
+        <h3 class="lang-en" style="display: none;">Optimistic scenario</h3>
+        
+        <p class="lang-pt">
+            Descreve o melhor cenário plausível, com as condições necessárias 
+            para que se concretize.
+        </p>
+        <p class="lang-en" style="display: none;">
+            Describe the best plausible scenario, with the necessary conditions 
+            for it to materialize.
+        </p>
+        
+        <h3 class="lang-pt">Cenário pessimista</h3>
+        <h3 class="lang-en" style="display: none;">Pessimistic scenario</h3>
+        
+        <p class="lang-pt">
+            Descreve o pior cenário plausível e os riscos que o podem desencadear.
+        </p>
+        <p class="lang-en" style="display: none;">
+            Describe the worst plausible scenario and the risks that could trigger it.
+        </p>
+        
+        <!-- Subtítulo -->
+        <h2 class="lang-pt">Conclusão e perspetivas</h2>
+        <h2 class="lang-en" style="display: none;">Conclusion and outlook</h2>
+        
+        <p class="lang-pt">
+            Resume os pontos principais e oferece uma visão de futuro. 
+            O que deve o leitor reter? O que deve acompanhar nos próximos meses? 
+            Termina com uma nota forte, que ligue à missão do Coordenada 25.
+        </p>
+        <p class="lang-en" style="display: none;">
+            Summarize the main points and offer a forward-looking view. 
+            What should the reader take away? What should they follow in the coming months? 
+            End with a strong note that connects to Coordenada 25's mission.
+        </p>
+        
+    </div>
+    
+    <!-- ========== NAVEGAÇÃO ENTRE ARTIGOS ========== -->
+    <nav class="artigo-navegacao">
+        <a href="#" class="lang-pt">← Artigo anterior</a>
+        <a href="#" class="lang-en" style="display: none;">← Previous article</a>
+        
+        <a href="#" class="lang-pt">Próximo artigo →</a>
+        <a href="#" class="lang-en" style="display: none;">Next article →</a>
+    </nav>
+    
+    <!-- ========== NEWSLETTER NO FIM DO ARTIGO ========== -->
+    <aside class="artigo-newsletter">
+        <h3 class="lang-pt">Gostou desta análise?</h3>
+        <h3 class="lang-en" style="display: none;">Enjoyed this analysis?</h3>
+        
+        <p class="lang-pt">Receba inteligência estratégica sobre Moçambique todas as semanas.</p>
+        <p class="lang-en" style="display: none;">Receive strategic intelligence about Mozambique every week.</p>
+        
+        <form>
+            <input type="email" placeholder="O seu email" required class="lang-pt">
+            <input type="email" placeholder="Your email" required class="lang-en" style="display: none;">
+            <button type="submit" class="lang-pt">Subscrever</button>
+            <button type="submit" class="lang-en" style="display: none;">Subscribe</button>
+        </form>
+    </aside>
+</article>
+
+<footer>
+    <p class="lang-pt">© 2026 Coordenada 25 · Moçambique em Perspectiva</p>
+    <p class="lang-en" style="display: none;">© 2026 Coordenada 25 · Mozambique in Perspective</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
