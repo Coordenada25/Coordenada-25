@@ -1,0 +1,29 @@
+[
+  {
+    "categoria": "economia",
+    "categoria_pt": "Economia",
+    "categoria_en": "Economy",
+    "titulo_pt": "Mercados e crescimento",
+    "titulo_en": "Markets and growth",
+    "texto_pt": "Investimento, mercados e tendências que definem o crescimento nacional.",
+    "texto_en": "Investment, markets and trends that define national growth."
+  },
+  {
+    "categoria": "recursos",
+    "categoria_pt": "Recursos",
+    "categoria_en": "Resources",
+    "titulo_pt": "Energia e minerais",
+    "titulo_en": "Energy and minerals",
+    "texto_pt": "Energia, minerais estratégicos e oportunidades de desenvolvimento.",
+    "texto_en": "Energy, strategic minerals and development opportunities."
+  },
+  {
+    "categoria": "geopolitica",
+    "categoria_pt": "Geopolítica",
+    "categoria_en": "Geopolitics",
+    "titulo_pt": "Posição estratégica",
+    "titulo_en": "Strategic position",
+    "texto_pt": "O papel de Moçambique num mundo em transformação.",
+    "texto_en": "Mozambique's role in a changing world."
+  }
+]
