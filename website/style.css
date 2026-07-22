@@ -442,45 +442,4 @@ footer {
         align-self: flex-start;
     }
     
-    .hero {
-        max-height: 400px;
-    }
-    
-    .hero-text {
-        padding: 2rem 1.5rem;
-    }
-    
-    .hero-text h2 {
-        font-size: 1.6rem;
-    }
-    
-    .hero-text p {
-        font-size: 0.95rem;
-    }
-    
-    .nav-inner {
-        overflow-x: auto;
-        gap: 1.2rem;
-        padding: 0 1rem;
-    }
-    
-    .articles {
-        grid-template-columns: 1fr;
-    }
-    
-    .feature h3 {
-        font-size: 1.4rem;
-    }
-    
-    .data-grid h3 {
-        font-size: 2.2rem;
-    }
-    
-    .newsletter-form {
-        flex-direction: column;
-    }
-    
-    .newsletter-form button {
-        padding: 0.8rem;
-    }
-}
+.hero
