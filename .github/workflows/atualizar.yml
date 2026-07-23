@@ -1,0 +1,31 @@
+name: Atualizar Conteúdo
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  gerar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Instalar dependência
+        run: npm install gray-matter
+      
+      - name: Gerar JSONs
+        run: node scripts/gerar-json.js
+      
+      - name: Commit automático
+        run: |
+          git config user.name "Coordenada25 Bot"
+          git config user.email "bot@coordenada25.org"
+          git add radar.json metricas.json analise.json _dados/
+          git diff --staged --quiet || (git commit -m "🔄 Conteúdo atualizado" && git push)

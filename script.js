@@ -161,6 +161,7 @@ function carregarHero() {
             var textoEN = document.getElementById('hero-texto-en');
             var linkPT = document.getElementById('hero-link-pt');
             var linkEN = document.getElementById('hero-link-en');
+            var imagem = document.getElementById('hero-imagem');
 
             if (kickerPT) kickerPT.textContent = analise.eyebrow_pt;
             if (kickerEN) kickerEN.textContent = analise.eyebrow_en;
@@ -170,6 +171,10 @@ function carregarHero() {
             if (textoEN) textoEN.textContent = analise.texto_en;
             if (linkPT) linkPT.href = analise.link_url;
             if (linkEN) linkEN.href = analise.link_url;
+            
+            if (imagem && analise.imagem) {
+                imagem.src = analise.imagem;
+            }
 
             aplicarIdiomaAtual();
         })
@@ -270,7 +275,6 @@ function aplicarIdiomaAtual() {
         enElements.forEach(function(el) { el.style.display = ''; });
     }
 
-    // Atualizar placeholder do campo de email da newsletter conforme o idioma
     var emailInput = document.getElementById('newsletter-email');
     if (emailInput) {
         emailInput.placeholder = lang === 'pt' ? 'O seu email' : 'Your email';

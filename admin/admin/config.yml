@@ -1,0 +1,52 @@
+backend:
+  name: github
+  repo: Coordenada25/Coordenada-25
+  branch: main
+
+media_folder: "imagens"
+public_folder: "/imagens"
+
+collections:
+  - name: "radar"
+    label: "📡 Radar"
+    label_singular: "Artigo do Radar"
+    folder: "_dados/radar/ativo"
+    create: true
+    fields:
+      - {label: "Título PT", name: titulo_pt, widget: string}
+      - {label: "Título EN", name: titulo_en, widget: string, required: false}
+      - {label: "Texto PT", name: texto_pt, widget: text}
+      - {label: "Texto EN", name: texto_en, widget: text, required: false}
+      - {label: "Categoria PT", name: categoria_pt, widget: string}
+      - {label: "Categoria EN", name: categoria_en, widget: string, required: false}
+      - {label: "Categoria (slug)", name: categoria, widget: select, options: ["geopolitica", "energia", "economia", "recursos", "seguranca"]}
+      - {label: "Link", name: link, widget: string}
+      - {label: "Data", name: data, widget: date}
+      - {label: "Imagem", name: imagem, widget: image, required: false}
+      - {label: "Arquivar?", name: arquivar, widget: boolean, default: false}
+
+  - name: "metricas"
+    label: "📊 Métricas"
+    label_singular: "Métrica"
+    folder: "_dados/metricas"
+    create: true
+    fields:
+      - {label: "Valor", name: valor, widget: string}
+      - {label: "Unidade PT", name: unidade_pt, widget: string}
+      - {label: "Unidade EN", name: unidade_en, widget: string, required: false}
+      - {label: "Tendência", name: tendencia, widget: select, options: ["up", "down"]}
+
+  - name: "analise"
+    label: "🎯 Em Destaque (Hero)"
+    label_singular: "Análise Destaque"
+    folder: "_dados/analise"
+    create: true
+    fields:
+      - {label: "Eyebrow PT", name: eyebrow_pt, widget: string}
+      - {label: "Eyebrow EN", name: eyebrow_en, widget: string}
+      - {label: "Título PT", name: titulo_pt, widget: string}
+      - {label: "Título EN", name: titulo_en, widget: string}
+      - {label: "Texto PT", name: texto_pt, widget: text}
+      - {label: "Texto EN", name: texto_en, widget: text}
+      - {label: "Link", name: link_url, widget: string}
+      - {label: "Imagem de Fundo", name: imagem, widget: image, required: false}
